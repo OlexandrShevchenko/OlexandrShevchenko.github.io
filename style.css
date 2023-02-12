@@ -1,0 +1,27 @@
+.name__navbar {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+      
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+      
+.navbar li a {
+    padding: 10px;
+    background-color: #dddddd;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+    margin-right: 20px;
+}
+      
+.navbar li a:hover {
+    background-color: #ccc;
+}
