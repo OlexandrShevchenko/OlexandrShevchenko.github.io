@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="../../index.html">Головна</a>
+        <a href="../sign_in/sign_in.html">Авторизація</a>
+        <a href="../ice_cream/ice_cream.html">Морозиво</a>
+        <a href="../crypto/cryptocurrency.html">Крипта</a>
+        <a href="../reg/registration.html">Реєстрація</a> 
+    </nav>
+
+<h1>Registration</h1>
+<form>    
+<label for="">First name</label><br>
+<div><input type="text" placeholder="Enter your name"></div>
+    
+<label for="">Last name</label><br>
+<div><input type="text" placeholder="Enter your surname"></div>
+    
+<div>Gender</div>
+<label for="contactChoice1">Male</label>
+<input type="radio" id="payChoice1"
+name="pay" value="creditCard">
+   
+<label for="payPalChoice2">Female</label>
+<input type="radio" id="payChoice2"
+name="pay" value="payPal">
+
+<div>Birthday</div>
+<input type="date">
+
+<div>
+<label for="about">Write about yourself</label>
+<br>
+<textarea id="about" name="about" placeholder="A few words about who are you"></textarea>
+</div>
+<div>
+    <select>
+        <option value="" disabled selected>Choose a course</option>
+        <option value="backend">Backend</option>
+        <option value="frontend">Frontend</option>
+        <option value="web_design">Web design</option>
+        <option value="3d_design">3D design</option>
+    </select>
+</div>
+
+    <label for="add_photo">Add a photo</label>
+    <div><input type="file"></div>
+<div>
+    <button id="sing_up">Sign up</button>
+</div>
+</form>
+</body>
+</html>
