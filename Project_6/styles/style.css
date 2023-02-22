@@ -1,0 +1,86 @@
+body {
+    padding: 30px;
+}
+
+nav a {
+    padding: 10px;
+    margin-right: 20px;
+    background-color: #dddddd;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+}
+
+span a {
+    font-size: 50px;
+    color: green;
+    text-decoration: none;
+}
+
+/* course frontend */
+.container {
+    border: 2px solid #00ccff;
+    background-color: #ffff00;
+}
+
+.container h1 {
+    text-align: center;
+    background-color: #00ccff;
+    color: white;
+    padding: 20px 0;
+}
+
+.container h1 span {
+    padding: 20px;
+    border: 10px solid white;
+}
+
+.text__red {
+    text-transform: uppercase;
+    color: red;
+}
+
+.text__red_bold {
+    text-transform: none;
+    color: red;
+}
+
+.text__green {
+    color: green;
+}
+
+.text__blue {
+    color: blue;
+}
+
+.box {
+    margin: 50px 0px 0px;
+    height: auto;
+    width: auto;
+    background-color: #49ccff;
+}
+
+.box div {
+    display: flex;
+    justify-content: center;
+}
+
+.box div img {
+    height: 250px;
+}
+/* languges */
+.text {
+    padding: 30px 0px 0px 0px;
+}
+
+.ua a {
+    color: green;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.en a {
+    color: red;
+    font-weight: 50px;
+    text-decoration: underline;
+}
