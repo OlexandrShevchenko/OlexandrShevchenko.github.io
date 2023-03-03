@@ -6,23 +6,22 @@
 
 /* Body */
 body {
-    font-family: 'Russo One', sans-serif;
     font-weight: 700;
     font-size: 18px;
 }
 
 @font-face {
-    font-family: "Muller_Regular";
-    src: url(../fonts/MullerRegular.woff) format('woff')
-         url(../fonts/MullerRegular.woff2) format('woff2');
+    font-family: 'Muller_Regular';
+    src: url(../fonts/MullerRegular.woff2) format('woff2')
+         url(../fonts/MullerRegular.woff) format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Muller_Bold";
-    src: url(../fonts/MullerBold.woff) format('woff')
-         url(../fonts/MullerBold.woff2) format('woff2');
+    font-family: 'Muller_Bold';
+    src: url(../fonts/MullerBold.woff2) format('woff2')
+         url(../fonts/MullerBold.woff) format('woff');
     font-weight: 700;
     font-style: normal;
 }
@@ -53,8 +52,7 @@ header {
 }
 
 /* Menu */
-#menu {
-    font-family: "Esm Regular";
+#menu { 
     list-style-type: none;
     
 }
@@ -81,7 +79,7 @@ header {
 }
 
 /* Main */
- .header_container {
+.header_container {
     display: flex;
     flex-direction: column;
     max-width: 1180px;
@@ -133,8 +131,7 @@ header {
 /* Photo lady */
 #photo {
     position: absolute;
-    top: 70px;
-    right: 1px;
+    bottom: 0;
 }
 
 /* Cards */
@@ -142,7 +139,7 @@ header {
     display: flex;
     justify-content: space-between;
     max-width: 1180px;
-    padding-top: 115px;
+    padding-top: 185px;
     z-index: 1;
 }
   
@@ -155,7 +152,6 @@ header {
     width: 100%;
     max-width: 350px;
     padding: 20px;
-    box-sizing: border-box;
 }
   
 .box__number {
@@ -165,7 +161,6 @@ header {
 }
   
 .box__text {
-    font-family: 'Muller_Regular';
     font-size: 1.1em;
     color: #000;
 }
@@ -181,6 +176,7 @@ main h2 {
 }
 
 h2 span {
+
     color: #46b1de;
 }
 
@@ -189,46 +185,45 @@ main p {
 }
 
 /* Table */
-/* .container {
+.table_grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #add8e6;
-    max-width: 1000px;
+    width: 1000px;
     margin: 0 auto;
-    justify-items: center;
-    border: 15px solid #add8e6;
+    border: 20px solid #add8e6;
+    gap: 10px;
+}
+
+.table_grid, .table_box {
     border-radius: 5px;
-    gap: 15px;
-    margin-top: 50px;
 }
 
-.table_numbers {
-    font-size: 50px;
-    font-weight: 500;
-    text-align: left;
-    padding-right: 9px;
-}
-
-.table_title {
-    display: inline-block;
-    width: 200px;
-    justify-content: flex-start;
-    text-align: left;
-}
-
-.container div {
-    max-width: 300px;
+/* Table box */
+.table_box {
     background-color: #fff;
-    border-radius: 5px;
-    padding: 15px;
-    text-align: left;
-    padding-bottom: 50px;
+    height: 200px;
+    width: 300px;
+    justify-self: center;
+    text-align: start;
+    padding: 10px;
 }
 
-.container div div {
-    font-size: 15px;
-    padding: 0;
+/* Table number */
+.table_number {
+    font-size: 50px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.table_item {
+    background-color: #fff;
+    height: 200px;
+    width: 300px;
+    justify-self: center;
+    text-align: start;
+    padding: 10px;
 }
 
 .item-01 {
@@ -259,43 +254,8 @@ main p {
 .item-06 {
     grid-row: 2;
     grid-column: 3;
-} */
-
-@media screen (max-width: 600px) {
-    .table_grid {
-        display: flex;
-        flex-direction: column;
-        width: 100px;   
-        margin: 0 auto;
-    }
 }
 
-.table_grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #add8e6;
-    width: 1000px;
-    margin: 0 auto;
-    border: 20px solid #add8e6;
-    gap: 10px;
-}
-
-.table_grid, .table_box {
-    border-radius: 5px;
-}
-
-/* Table box */
-.table_box {
-    background-color: #fff;
-    height: 200px;
-    width: 300px;
-    justify-self: center;
-    text-align: start;
-    padding: 10px;
-}
-
-/* Table number */
 .table_number {
     font-size: 50px;
     font-weight: 300;
